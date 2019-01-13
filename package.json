@@ -1,0 +1,57 @@
+{
+  "name": "micro-blog",
+  "private": false,
+  "description": "A simple micro blog built with GatsbyJS + Netlify Serverless + mongoDB",
+  "version": "0.1.0",
+  "author": "Michael Ozoemena <theozmic@gmail.com>",
+  "dependencies": {
+    "@emotion/core": "^10.0.6",
+    "@emotion/styled": "^10.0.6",
+    "auth0-js": "^9.9.0",
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-create-client-paths": "^2.0.3",
+    "gatsby-plugin-emotion": "^4.0.1",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "jsonwebtoken": "^8.4.0",
+    "jwks-rsa": "^1.3.0",
+    "mongoose": "^5.4.7",
+    "netlify-lambda": "^1.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby",
+    "micro-blog"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "start:lambda": "NODE_ENV=development netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions",
+    "prod": "NODE_ENV=production npm run build; npm run build:lambda"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theozmic/micro-blog"
+  },
+  "bugs": {
+    "url": "https://github.com/theozmic/micro-blog/issues"
+  }
+}
